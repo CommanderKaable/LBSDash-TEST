@@ -418,6 +418,21 @@ const PROJECTS = [
       ["scroll", "#categories"],
       ["mark", "#categories", "Kategorier i en tabell"],
       ["drift"]
+    ] },
+
+  { id: "mhl", color: "green", src: "elev/mhl/index.html", url: "",
+    eyebrow: "Webbplats", title: ["MHL", "Hockeyliga"],
+    tags: ["HTML", "CSS", "Flexbox", "Tabeller"],
+    desc: "Webbplats för en påhittad hockeyliga med meny, regler och en tabell i NHL-stil.",
+    script: [
+      ["wait", 900],
+      ["mark", "#meny", "Meny med flexbox: logga till vänster, länkar till höger"],
+      ["mark", "#menylänkar", "Nio menylänkar på en rad med flexbox"],
+      ["mark", ".rules-box", "Regelruta med rundade hörn"],
+      ["mark", ".table-box", "Säsong och datum"],
+      ["mark", ".mhl-table", "Tabell i NHL-stil"],
+      ["mark", ".table-container", "Tabellen kan rullas i sidled på mobilen"],
+      ["drift"]
     ] }
 ];
 
